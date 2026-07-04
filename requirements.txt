@@ -1,0 +1,18 @@
+# Core
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+scikit-learn>=1.3
+
+# ECG I/O and signal processing
+wfdb>=4.1            # PhysioNet record reading (PTB-XL, MIT-BIH)
+neurokit2>=0.2.7     # R-peak detection, HRV, P/QRS/T delineation
+
+# Deep / foundation representations (deep_repr.py conv-AE; the HuBERT-ECG and ECGFounder arms)
+torch>=2.0
+transformers>=4.40   # stock HubertModel for the HuBERT-ECG embedding
+huggingface-hub>=0.20 # public checkpoint downloads (HuBERT-ECG, ECGFounder)
+safetensors>=0.4     # HuBERT-ECG weight loading
+
+# Plotting
+matplotlib>=3.7
